@@ -5,10 +5,16 @@
 
 [causal_discovery_meteo] (https://github.com/t1-yamamura/causal_discovery_meteo)
 
+**[Python/convLSTM/PINN]** MSMの数値データから気象現象の因果律をAIモデルで学習し、特定の気象イベントのトリガーの探索を試みています。詳しくはリンク先をご参照ください。
+
 **2. LSTや日射量の計算のための雲マスクの作成**
 
 [cloudmask_meteo] (https://github.com/t1-yamamura/cloudmask_meteo)
 
+**[Python/ひまわり/K-means/OpenCV]** 衛星ひまわりのデータに対し、画像処理と機械学習を組み合わせて雲マスク生成を試みています（LST/日射量計算の前処理）。詳しくはリンク先をご参照ください。
+
 **3. 大船渡林野火災の分析**
 
 (https://public.tableau.com/app/profile/t.yamamura/vizzes)
+
+**[QGIS/Tableau/Sentinel-2/オリジナルインデックス]** 林床の含水量ではなく森林の乾燥度から林野火災のリスクを見積もっています。NDWIにかわるオリジナルインデックスを用いています。
