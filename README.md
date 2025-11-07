@@ -18,3 +18,11 @@
 (https://public.tableau.com/app/profile/t.yamamura/vizzes)
 
 **[QGIS/Tableau/Sentinel-2/オリジナルインデックス]** 林床の含水量ではなく森林の乾燥度から林野火災のリスクを見積もっています。NDWIにかわるオリジナルインデックスを用いています。
+
+**4. AWSを用いた天気図等の配信API**
+
+(https://bqvtbhq7po2cfhdnfmu7bflbzq0pcvga.lambda-url.ap-northeast-1.on.aws/weather-map)
+
+**[AWS/FastAPI/Docker]** 気象庁が公開している天気図画像（SPAS_COLOR）を取得し(存在する最新の時刻のファイルを探索)、FastAPI経由でHTMLページとして配信（出典：気象庁を明記）しています。アプリケーションはDockerコンテナ化し、AWS ECRにイメージをpushした後、そのイメージをベースにAWS Lambda（コンテナイメージ対応）としてデプロイしています。Lambda Function URLから直接APIを公開しています。
+
+今後やりたい拡張（現在勉強中）ひまわりの雲画像を別のLambdaとS3で定期取得し、API側で「最新の天気図+雲画像」を重ね合わせて配信する処理
