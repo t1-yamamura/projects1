@@ -3,9 +3,7 @@
 
 **1. 因果探索の気象現象の分析への応用**
 
- (<a href="https://github.com/t1-yamamura/causal_discovery_meteo" target="_blank" rel="noopener noreferrer">
-[causal_discovery_meteo]
-</a>)
+[causal_discovery_meteo] (https://github.com/t1-yamamura/causal_discovery_meteo)
 
 **[Python/convLSTM/PINN]** MSMの数値データから気象現象の因果律をAIモデルで学習し、特定の気象イベントのトリガーの探索を試みています。詳しくはリンク先をご参照ください。
 
